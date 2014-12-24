@@ -167,7 +167,7 @@ int omb_show_menu()
 			seconds  = end.tv_sec  - start.tv_sec;
 			useconds = end.tv_usec - start.tv_usec;
 
-			mtime = ((seconds) * 1000 + useconds/1000.0) + 0.5;
+			mtime = ((seconds) * 1000 + useconds/1000.0) + 0.9;
 			int last_value = omb_current_timer;
 			omb_current_timer = omb_timer - (mtime / 1000);
 			
